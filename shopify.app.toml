@@ -1,0 +1,21 @@
+name = "countdown-timer-app"
+client_id = "bb76986879cda68db7c4fefad1fe4937"
+application_url = "https://achronychous-psittacistic-cierra.ngrok-free.dev"
+embedded = true
+
+[access_scopes]
+scopes = "read_products,write_script_tags"
+
+[auth]
+redirect_urls = [
+  "https://achronychous-psittacistic-cierra.ngrok-free.dev/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true

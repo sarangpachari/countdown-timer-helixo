@@ -1,0 +1,29 @@
+{
+  "name": "countdown-timer-web",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node backend/index.js",
+    "serve": "cross-env NODE_ENV=production node backend/index.js",
+    "build": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "@shopify/shopify-app-express": "^3.0.0",
+    "@shopify/shopify-app-session-storage-mongodb": "^2.0.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
+    "serve-static": "^1.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.20.0"
+  }
+}

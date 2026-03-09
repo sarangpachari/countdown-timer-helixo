@@ -1,0 +1,7 @@
+api_version = "2024-01"
+
+[[extensions]]
+name = "Countdown Timer Widget"
+handle = "countdown-timer-widget"
+uid = "f3a66dfc-b8e3-a772-3625-ffc82c858ba34128423e"
+type = "theme"
