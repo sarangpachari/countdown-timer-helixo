@@ -1,8 +1,8 @@
-import { config } from "dotenv";
+import "./env.js";
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import { join, dirname, resolve } from "path";
+import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import morgan from "morgan";
 import compression from "compression";
@@ -11,10 +11,8 @@ import shopify from "./shopify.js";
 import timerRoutes from "./routes/timers.js";
 import widgetRoutes from "./routes/widget.js";
 
-// Load .env from the project root (helixo_task/) regardless of cwd
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-config({ path: resolve(__dirname, "../../.env") });
 
 const PORT = parseInt(process.env.PORT || "3000", 10);
 
